@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGL 2D Object</title>
+    <style>
+        /* CSS to center the canvas and buttons */
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #f0f0f0; /* Optional: Light grey background */
+        }
+        canvas {
+            border: 1px solid #000; /* Optional: Add border to canvas */
+        }
+        div {
+            margin-top: 10px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="glCanvas" width="600" height="400"></canvas>
+    
+    <!-- Tombol warna dan reset -->
+    <div>
+        <button onclick="changeColor(1)">Red</button>
+        <button onclick="changeColor(2)">Green</button>
+        <button onclick="changeColor(3)">Blue</button>
+        <button onclick="resetColor()">Reset Color</button>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
